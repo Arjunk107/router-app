@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container__logo">
+
+  </div>
+  <div class="container__navs">
+    <a routerLink="home" routerLinkActive="activepage">Home</a>
+    <a routerLink="contact" routerLinkActive="activepage">Contact</a>
+    <a routerLink="students" routerLinkActive="activepage">Students</a>
+    <a [routerLink]="['studentname','Amal']" routerLinkActive="activepage">Student 1</a>
+    <a [routerLink]="['studentname','Abin']" routerLinkActive="activepage">Student 1</a>
+
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
+<router-outlet name="nameonly"></router-outlet>
+<router-outlet name="details"></router-outlet>
